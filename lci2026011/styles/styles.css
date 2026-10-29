@@ -1,0 +1,147 @@
+*{
+            box-sizing:border-box;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+        }
+        body{
+            margin:0px;
+            padding:0px;
+            background-color:rgb(253, 244, 231);
+        }
+        div{
+            margin:22px;
+            width:1300px;
+            height:auto;
+            margin-bottom:75px;
+        }
+        img{
+            border:2px solid black;
+            border-top-left-radius:25%;
+            border-top-right-radius:25%;
+            width:190px;
+            height:360px;
+            margin-top:auto;
+            margin-bottom:auto;
+        }
+        aside{
+            display:flex;
+            flex-direction: column;
+        }
+        .caption{
+            padding:5px;
+            width:190px;
+            text-align: center;
+            background-color: rgb(252, 252, 252);
+            border-bottom-left-radius: 25%;
+            border-bottom-right-radius: 25%;
+            border:2px solid black;
+        }
+        nav{
+            position:sticky;
+            top:0px;
+            background-color: rgb(56, 56, 56);
+            width:100%;
+            display:flex;
+            gap:100px;
+            justify-content:center;
+            
+        }
+        nav a{
+            color:aliceblue;
+            padding:10px;
+            background-color:rgb(56, 56, 56);
+            text-decoration:none;
+            margin:5px;
+        }
+        nav a:hover{
+            background-color: rgb(102, 102, 102);
+        }
+        header{
+            font-size: 50px;
+            text-align:center;
+        }
+        header p{
+            font-size: 30px;
+        }
+        .Introduction{
+            background-color: aliceblue;
+            
+            padding:20px;
+            border:2px solid black;
+            border-radius:5%;
+            display:flex;
+            gap:20px;
+            align-items: center;
+        }
+
+        .evolution{
+
+            background-color: aliceblue;
+            
+            padding:20px;
+            border:2px solid black;
+            border-radius:5%;
+            display:flex;
+            gap:20px;
+            align-items: center;
+        }
+
+        .comparision{
+
+            background-color: aliceblue;
+            
+            padding:20px;
+            border:2px solid black;
+            border-radius:5%;
+            display:flex;
+            gap:20px;
+            align-items: center;
+        }
+
+        .comparision section{
+            text-align:center;
+            padding:5px;
+        }
+        .comparision section table{
+            border: 2px solid black;
+            border-spacing: 0px;
+            
+        }
+        .comparision section th,td{
+            border:2px solid black;
+            padding:5px;
+
+        }
+        .comparision section table th{
+            background-color: rgb(81, 81, 253);
+            color:white;
+        }
+        .comparision section table tbody tr td:first-child{
+            background-color: rgb(181, 181, 254);
+        }
+        .ranking{
+
+            background-color: aliceblue;
+            
+            padding:20px;
+            border:2px solid black;
+            border-radius:5%;
+            display:flex;
+            gap:20px;
+            align-items: center;
+        }
+        .ranking section{
+            text-align: center;
+        }
+
+        .conclusion{
+
+            background-color: aliceblue;
+            
+            padding:20px;
+            border:2px solid black;
+            border-radius:5%;
+            display:flex;
+            gap:20px;
+            align-items: center;
+        }
