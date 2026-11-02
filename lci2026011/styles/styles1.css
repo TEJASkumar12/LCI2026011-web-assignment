@@ -8,17 +8,22 @@
             padding:0px;
             background-color:rgb(40, 24, 43);
             color:white;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+
         }
         div{
-            margin:22px;
-            width:1300px;
+            margin:32px;
+            width:100%;
             height:auto;
             margin-bottom:75px;
+            padding:50px;
         }
         img{
 
-            width:190px;
-            height:360px;
+            width:100%;
+            height:100%;
             margin-top:auto;
             margin-bottom:auto;
         }
@@ -27,15 +32,13 @@
             flex-direction: column;
         }
         .caption{
-            display: none;
+            display:block;
             padding:5px;
             width:190px;
             text-align: center;
             
         }
-        aside:hover caption{
-            display: block;
-        }
+
 
         nav{
             position:sticky;
@@ -43,13 +46,15 @@
             background-color: rgb(84, 50, 95);
             width:100%;
             display:flex;
-            gap:100px;
+            gap:auto;
             justify-content:center;
             border-bottom-left-radius: 5%;
             border-bottom-right-radius: 5%;
         }
         nav a{
-            font-weight: 500px;
+            font-size:large;
+            width:33%;
+            text-align:center;
             color:aliceblue;
             padding:10px;
             background-color:rgb(84, 50, 95);
@@ -60,21 +65,41 @@
             background-color: rgb(73, 37, 80);
         }
         header{
-            font-size: 50px;
+            font-size: 80px;
             text-align:center;
+            padding:55px;
         }
-        header p{
-            font-size: 30px;
+        h1{
+            margin:60px;
+        }
+        .sectionhead{
+            text-align:center;
+            font-size:x-large;
+            margin:10px;
+
         }
         .Introduction{
-            
-            
             padding:20px;
-            border:2px solid black;
-            border-radius:5%;
+            height:auto;
             display:flex;
-            gap:20px;
+            flex-direction: column;
+            gap:100px;
             align-items: center;
+        }
+        .Introduction section{
+            display:flex;
+            align-items: center;
+            width:80%;
+            margin:10px;
+            gap:20px;
+        }
+        .Introduction section aside{
+            width:40%;
+        }
+        .Introduction section article{
+            width:auto;
+            text-align: center;
+            font-size:x-large;
         }
 
         .evolution{
