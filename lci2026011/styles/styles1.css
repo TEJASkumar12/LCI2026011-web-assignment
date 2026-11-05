@@ -13,6 +13,27 @@
             align-items:center;
 
         }
+        .main{
+            padding:50px;
+            display:flex;
+            flex-direction: column;
+            gap:0px;
+            align-items: center;
+            
+        }
+        .main img{
+            width:auto;
+            height:auto;
+            
+            
+        }
+        .main h1{
+            margin:0px;
+            padding:5px;
+            font-size:60px;
+            outline:0px solid white;
+            animation: border 1s linear 0s infinite alternate-reverse;
+        }
         div{
             margin:32px;
             width:100%;
@@ -26,6 +47,7 @@
             height:100%;
             margin-top:auto;
             margin-bottom:auto;
+            
         }
         aside{
             display:flex;
@@ -65,18 +87,18 @@
             background-color: rgb(73, 37, 80);
         }
         header{
-            font-size: 80px;
             text-align:center;
-            padding:55px;
+
         }
-        h1{
-            margin:60px;
-        }
+
         .sectionhead{
             text-align:center;
             font-size:x-large;
             margin:10px;
-
+            padding:15px;
+            background-image: linear-gradient(to right,rgb(183, 74, 255) 0%,rgb(208, 134, 252) 25%,rgb(183, 74, 255) 50%,rgb(214, 145, 253) 75%,rgb(183, 74, 255) 100%);
+            outline:0px solid white;
+            animation: border 1s linear 0s infinite alternate-reverse;
         }
         .Introduction{
             padding:20px;
@@ -125,6 +147,10 @@
             display:flex;
             flex-direction: column;
             align-items:center;
+            overflow:auto;
+        }
+        .evolution #content article section:not(.arrow):hover{
+            outline: 3px solid white;
         }
         .evolution #content article section p{
             font-size:medium;
@@ -135,35 +161,120 @@
             border:1px solid white;
         }
         .comparision{
-
-            
-            
             padding:20px;
-            border:2px solid black;
-            border-radius:5%;
+            height:auto;
             display:flex;
-            gap:20px;
+            flex-direction: column;
+            gap:60px;
             align-items: center;
         }
 
-        .comparision section{
-            text-align:center;
-            padding:5px;
+        .comparision #table{
+            display:flex;
+            width:auto;
+            height:auto;
+            gap:10px; 
+            align-items:center;
         }
-        .comparision section table{
+        .comparision #table table{
             border: 2px solid black;
             border-spacing: 0px;
             
+        }
+        .comparision #table aside{
+            width: 20%;
+            height:auto;
         }
         .comparision section th,td{
             border:2px solid black;
             padding:5px;
 
         }
-        .comparision section table th{
+        .comparision #table section table th{
             background-color: rgb(81, 81, 253);
             color:white;
         }
-        .comparision section table tbody tr td:first-child{
+        .comparision #table section table tbody tr td:first-child{
             background-color: rgb(181, 181, 254);
         }
+        .credentials{
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+        }
+        .credentials #secrethead{
+            text-align:center;
+            font-size:20px;
+        }
+        .credentials #creator{
+            display: flex;
+            align-items: center;
+            gap:100px;
+            width: 100%;
+        }
+        .credentials #creator img{
+            width:20%;
+            height:auto;
+            animation: rotation 5s linear 0s infinite alternate-reverse;
+        }
+        .credentials #creator #details{
+            display:none;
+        }
+        .credentials #creator .caption{
+            display:block;
+        }
+        .credentials #creator img:hover{
+            animation: none;
+            width:20%;
+            height:auto;
+        }
+        .credentials #creator img:hover+.caption{
+            display:none;
+        }
+        .credentials #creator img:hover~#details{
+            display:block;
+            width:auto;
+        }
+
+
+        @keyframes border{
+            0%{
+                outline: 0px solid white;
+            }
+            10%{
+                outline: 1px solid white;
+            }
+            20%{
+                outline: 2px solid white;
+            }
+            30%{
+                outline: 3px solid white;
+            }
+            40%{
+                outline: 4px solid white;
+            }
+            50%{
+                outline: 5px solid white;
+            }
+        }
+        @keyframes rotation {
+            0%{
+                transform: rotate(0deg);
+            }
+            10%{
+                tranform: rotate(45deg);
+            }
+            20%{
+                transform: rotate(-45deg);
+            }
+            30%{
+                transform: rotate(-45deg);
+            }
+            40%{
+                transform: rotate(45deg);
+            }
+
+            
+        }
+
+
